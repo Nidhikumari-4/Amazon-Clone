@@ -56,7 +56,7 @@ const Home = () => {
           id={12312}
           title="AOPEN Acer 24-inch (60.96 cm) Aopen Curve Gaming Monitor - 24HC1QR (Black)"
           price={15800}
-          rating={3}
+          rating={5}
           image="https://m.media-amazon.com/images/I/812WXALePlL._AC_UY218_.jpg"
         />
       </div>
