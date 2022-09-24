@@ -20,7 +20,7 @@ const Home = () => {
         />
         <Product
           id={12312}
-          title="cer Aspire 3 Intel Core i3 11th Generation 15.6-inch (39.6 cms) Full HD Laptop "
+          title="Acer Aspire 3 Intel Core i3 11th Generation 15.6-inch (39.6 cms) Full HD Laptop "
           price={32000}
           rating={4}
           image="https://m.media-amazon.com/images/I/711tZecNhyL._AC_UY218_.jpg"

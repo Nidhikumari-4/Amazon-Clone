@@ -3,9 +3,12 @@ import { useStateValue } from "../StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 import "./Checkout.css";
+import "./CheckoutProduct.css";
 
 const Checkout = () => {
   const [{ basket }] = useStateValue();
+
+  console.log(basket);
 
   return (
     <div className="checkout">
@@ -19,7 +22,7 @@ const Checkout = () => {
           <div>
             <h2>Your Shopping basket is empty</h2>
             <p>
-              You have no items in your basked. To buy one or more items, click
+              You have no items in your basket. To buy one or more items, click
               "Add to basket" next to the item.
             </p>
           </div>
@@ -28,6 +31,7 @@ const Checkout = () => {
             <h2 className="checkout_title">Your Shopping Basket</h2>
             {basket?.map((item) => (
               <CheckoutProduct
+                key={item.id}
                 id={item.id}
                 title={item.title}
                 image={item.image}
